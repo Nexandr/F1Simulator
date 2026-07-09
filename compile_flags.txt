@@ -1,0 +1,10 @@
+-x
+c++
+-std=c++17
+-target
+i686-w64-mingw32
+-IC:\MinGW\lib\gcc\mingw32\6.3.0\include\c++
+-IC:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32
+-IC:\MinGW\lib\gcc\mingw32\6.3.0\include
+-IC:\MinGW\include
+-Iheaders
