@@ -16,19 +16,19 @@ struct track {
   double avg_temp;
   double track_degradation;
   double base_lap_time;
+  double rain_probability;
+  int hard_compound_tier;
 };
 struct sim_engine {
 private:
-  std::vector<driver> grid;
-  std::vector<team> team_registry;
+  std::vector<driver>& grid;
   int total_laps;
   int current_lap;
   track current_track;
 
-  void load(const std::string& drivers_csv, const std::string& teams_csv);
-
 public:
-  sim_engine(const track& active_track, int laps, const std::string& drivers_csv, const std::string& teams_csv);
+  sim_engine(const track& active_track,std::vector<driver>& working_grid);
+
   void run_qualifying();
   void run_race();
 };

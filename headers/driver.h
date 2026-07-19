@@ -30,6 +30,9 @@ struct driver {
   int pitstops = 0;
   double time_in_pits = 0.0;
   bool is_dnf = false;
+  double best_lap = 0.0;
+  double last_lap = 0.0;
+  double diff = 0.0;
 
   // calculation functions
   double racecraft_index();
