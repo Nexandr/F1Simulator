@@ -1,7 +1,6 @@
 #include "../headers/resource_loader.h"
 #include <fstream>
 #include <sstream>
-#include <iostream>
 #include <stdexcept>
 #include <string>
 
