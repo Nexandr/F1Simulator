@@ -4,7 +4,6 @@
 #include <string>
 #include <vector>
 #include "driver.h"
-#include "team.h"
 
 struct track {
   std::string name;
